@@ -1,4 +1,8 @@
+<<<<<<< HEAD
  {
+=======
+{
+>>>>>>> de5656b3f3da4c0b7a8b2b5ba86965f19249c67e
   "connector": {
     "name": "local",
     "options": {
