@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  height: 24px;
+}
+
+.navbar {
+  width: 100%;
+  height: 48px;
+  background: #3c3a39;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.main-container {
+  width: 100%;
+  min-height: calc(100vh - 48px);
+  background: url(./images/illustration-header-mobile.png) right bottom no-repeat;
+  background-color: #1c1a19;
+}
+
+.primary-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.primary-text h1 {
+  color: #ff6b00;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  margin: 0 24px 12px 24px;
+}
+
+.primary-text h2 {
+  color: #fff5e1;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 24px 12px 24px;
+}
+
+.primary-text p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 24px 12px 24px;
+}
+
+.social-media-icon ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 24px;
+}
+
+.social-media-icon ul li {
+  padding: 0 12px;
+}
