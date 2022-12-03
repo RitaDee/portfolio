@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+
+  --background: #1c1a19;
 }
 
 body {
@@ -73,6 +75,18 @@ body {
   margin: 0 24px 12px 24px;
 }
 
+article p {
+  color: #091e42;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin: 12px 24px;
+  width: 327px;
+}
+
 .primary-text p {
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -83,6 +97,14 @@ body {
   margin: 0 24px 12px 24px;
 }
 
+article ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 24px 24px 0 24px;
+}
+
 .social-media-icon ul {
   display: flex;
   align-items: center;
@@ -91,6 +113,209 @@ body {
   margin: 24px;
 }
 
+article ul li {
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  margin-right: 12px;
+  font-size: inherit;
+  font-size: 15px;
+}
+
+.skills-lang li {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+}
+
+.lang li {
+  padding: 12px 0;
+  font-size: 22px;
+}
+
 .social-media-icon ul li {
   padding: 0 12px;
+}
+
+.recent-works {
+  display: grid;
+}
+
+h2.title {
+  width: 327px;
+  height: 83px;
+  margin: 120px 24px 24px 24px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+}
+
+img.vector {
+  width: 327px;
+  height: 0;
+  border: 1px solid #212121;
+  margin: 0 24px 80px 24px;
+}
+
+img.themes {
+  width: 327px;
+  height: 237px;
+  margin: 0 24px 24px 24px;
+}
+
+article h3 {
+  color: #091e42;
+  font-family: inherit;
+  margin-left: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+article button,
+.btn-resume {
+  background: #ff6b00;
+  color: #fff;
+  font-family: inherit;
+  line-height: 24px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-left: 24px;
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+}
+
+button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+}
+
+button:active {
+  color: #f4f1f0;
+  background-color: #f55800;
+}
+
+.profession {
+  background-image: url(./images/Bg\ Placeholder.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80%;
+  margin: 24px auto;
+}
+
+.profession h4 {
+  color: #fff;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 84px 16px 0 16px;
+}
+
+.profession p {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 12px 12px 12px 16px;
+}
+
+.profession ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 12px 24px 24px 16px;
+}
+
+.profession ul li {
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  margin-right: 12px;
+  font-size: inherit;
+  font-size: 15px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.btn-project {
+  background: #ff6b00;
+  color: #fff;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  width: 100%;
+  height: 48px;
+  margin: -3px auto 0 auto;
+  border: none;
+}
+
+.about-me {
+  background: var(--background) url(./images/Group.png) no-repeat 100% 100%;
+  align-items: flex-start;
+  margin: 0;
+  width: 100%;
+  min-height: calc(100vh - 48px);
+}
+
+section h5 {
+  color: #ff6b00;
+  letter-spacing: 0.37px;
+  margin: 120px 24px 12px 24px;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  width: 327px;
+  height: 79px;
+}
+
+.about-me p {
+  color: #f4f5f7;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 24px 24px;
+}
+
+.btn-resume {
+  font-family: "Inter", sans-serif;
+}
+
+img.vector4 {
+  width: 327px;
+  height: 0;
+  border: 1px solid #fff;
+  margin: 0 24px 0 24px;
+}
+
+.skills-lang {
+  font-family: "Crete round", sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.skills {
+  background-color: #1c1a19;
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 0;
+}
+
+.lang {
+  margin-top: 12px;
+}
+
+span {
+  margin-right: 10px;
 }
