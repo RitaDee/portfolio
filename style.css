@@ -54,6 +54,22 @@ body {
   padding-bottom: 100px;
 }
 
+footer > h1 {
+  color: #172b4d;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  line-height: 44px;
+  text-align: center;
+  vertical-align: top;
+  margin: 120px 24px 73px 24px;
+}
+
+form > ul {
+  margin: 0 auto;
+  max-width: 88%;
+  list-style: none;
+}
+
 .primary-text h1 {
   color: #ff6b00;
   font-family: "Crete Round", sans-serif;
@@ -318,22 +334,6 @@ img.vector4 {
 
 span {
   margin-right: 10px;
-}
-
-footer > h1 {
-  color: #172b4d;
-  font-weight: 700;
-  font-family: "Inter", sans-serif;
-  line-height: 44px;
-  text-align: center;
-  vertical-align: top;
-  margin: 120px 24px 73px 24px;
-}
-
-form > ul {
-  margin: 0 auto;
-  max-width: 88%;
-  list-style: none;
 }
 
 #name,
