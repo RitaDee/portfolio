@@ -120,6 +120,25 @@ Example command:
 - Twitter: [@twitterhandle](https://twitter.com/durdana_dee)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rita-daniel/)
 
+<!-- Feat<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **[Animation]**
+- **[Transitions]**
+- **[Javascript]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[key_feature_1]**
+- **[key_feature_2]**
+- **[key_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CONTRIBUTING -->
