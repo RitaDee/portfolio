@@ -319,3 +319,65 @@ img.vector4 {
 span {
   margin-right: 10px;
 }
+
+footer > h1 {
+  color: #172b4d;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  line-height: 44px;
+  text-align: center;
+  vertical-align: top;
+  margin: 120px 24px 73px 24px;
+}
+
+form > ul {
+  margin: 0 auto;
+  max-width: 88%;
+  list-style: none;
+}
+
+#name,
+#email {
+  width: 327px;
+  font-family: inherit;
+  padding: 10px;
+  border: none;
+  background: inherit;
+  font-weight: 400;
+  border-bottom: 1px solid gray;
+  margin-bottom: 14px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#message {
+  width: 327px;
+  margin-top: 25px;
+  font-family: inherit;
+  padding: 12px;
+  background-color: #e5e5e5;
+}
+
+.submit-btn {
+  height: 42px;
+  max-width: 137px;
+  background-color: #ff6b00;
+  text-align: center;
+  margin-left: 91px;
+  margin-top: 24px;
+  border: none;
+  padding: 11px;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.solid {
+  width: 100%;
+  margin-top: 124px;
+  margin-bottom: 20px;
+  border-top: 1px solid #dfe1e6;
+}
