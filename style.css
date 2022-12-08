@@ -11,34 +11,15 @@
 }
 
 body {
+  display: flex;
   width: 100%;
   min-height: 100vh;
   flex-direction: column;
 }
 
-body,
-.logo,
-.navbar,
-.primary-text,
-article ul,
-.social-media-icon ul,
-.profession ul {
-  display: flex;
-}
-
-.logo,
-.primary-text p,
-article button,
-.btn-resume,
-.profession h4,
-.profession p,
-.profession ul li,
-.btn-project,
-.skills-lang {
-  color: #fff;
-}
-
 .logo {
+  display: flex;
+  color: #fff;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -60,18 +41,20 @@ article button,
 .main-container {
   width: 100%;
   min-height: calc(100vh - 48px);
-  background: url(./images/illustration-header-mobile.png) right bottom
-    no-repeat;
+  background: url(./images/illustration-header-mobile.png) right bottom;
+  background-repeat: no-repeat;
   background-color: #1c1a19;
 }
 
 .primary-text {
+  display: flex;
   flex-direction: column;
   padding-top: 150px;
   padding-bottom: 100px;
 }
 
 footer > h1 {
+  font-family: "Inter", sans-serif;
   color: #172b4d;
   font-weight: 700;
   line-height: 44px;
@@ -80,25 +63,8 @@ footer > h1 {
   margin: 120px 24px 73px 24px;
 }
 
-form > ul {
-  margin: 0 auto;
-  max-width: 88%;
-  list-style: none;
-}
-
-h2.title,
-section h5,
-.primary-text h1,
-.profession h4,
-.skills-lang {
-  font-family: "Crete Round", sans-serif;
-}
-
-footer > h1 {
-  font-family: "Inter", sans-serif;
-}
-
 .primary-text h1 {
+  font-family: "Crete Round", sans-serif;
   color: #ff6b00;
   font-style: normal;
   font-weight: 400;
@@ -130,6 +96,7 @@ article p {
 }
 
 .primary-text p {
+  color: #fff;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -139,34 +106,11 @@ article p {
 }
 
 article ul {
+  display: flex;
   align-items: center;
   list-style-type: none;
   padding: 0;
   margin: 24px 24px 0 24px;
-}
-
-.social-media-icon ul {
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 24px;
-}
-
-article ul li {
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
-  margin-right: 12px;
-  font-size: inherit;
-  font-size: 15px;
-}
-
-.lang li {
-  padding: 12px 0;
-  font-size: 22px;
-}
-
-.social-media-icon ul li {
-  padding: 0 12px;
 }
 
 .recent-works {
@@ -174,6 +118,7 @@ article ul li {
 }
 
 h2.title {
+  font-family: "Crete Round", sans-serif;
   width: 327px;
   height: 83px;
   margin: 120px 24px 24px 24px;
@@ -209,6 +154,7 @@ article h3 {
 
 article button,
 .btn-resume {
+  color: #fff;
   background: #ff6b00;
   font-family: inherit;
   line-height: 24px;
@@ -240,6 +186,8 @@ button:active {
 }
 
 .profession h4 {
+  color: #fff;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -249,6 +197,8 @@ button:active {
 }
 
 .profession p {
+  color: #fff;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -263,11 +213,38 @@ button:active {
   margin: 12px 24px 24px 16px;
 }
 
+article ul li {
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  margin-right: 12px;
+  font-size: inherit;
+  font-size: 15px;
+}
+
+.lang li {
+  padding: 12px 0;
+  font-size: 22px;
+}
+
 .skills-lang li {
+  font-family: "Inter", sans-serif;
   font-size: 32px;
 }
 
+.social-media-icon ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 24px;
+}
+
+.social-media-icon ul li {
+  padding: 0 12px;
+}
+
 .profession ul li {
+  color: #fff;
   border: 1px solid #8993a4;
   padding: 10px 12px;
   margin-right: 12px;
@@ -296,6 +273,7 @@ button:active {
 }
 
 section h5 {
+  font-family: "Crete Round", sans-serif;
   color: #ff6b00;
   letter-spacing: 0.37px;
   margin: 120px 24px 12px 24px;
@@ -317,9 +295,6 @@ section h5 {
 }
 
 .about-me p,
-.btn-resume,
-.profession p,
-.skills-lang li,
 .submit-btn {
   font-family: "Inter", sans-serif;
 }
@@ -332,6 +307,8 @@ img.vector4 {
 }
 
 .skills-lang {
+  color: #fff;
+  font-family: "Crete Round", sans-serif;
   text-align: center;
   margin-bottom: 35px;
 }
@@ -446,9 +423,6 @@ span {
   .main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    /* width: 100%;
-          position: relative; */
   }
 
   .para-container {
@@ -479,6 +453,17 @@ span {
     align-items: flex-end;
   }
 
+  form > ul {
+    max-width: 88%;
+    list-style: none;
+  }
+
+  form ul {
+    margin: 0 auto;
+    max-width: 88%;
+    list-style: none;
+  }
+
   .social-media-icon ul {
     display: grid;
     float: left;
@@ -486,6 +471,17 @@ span {
     left: 2%;
     top: 310px;
     gap: 12px;
+  }
+
+  .multi img {
+    width: 80%;
+    height: auto;
+    margin-left: 50px;
+  }
+
+  .recent img {
+    margin-top: 15%;
+    width: 80%;
   }
 
   .social-media-icon ul img {
@@ -523,22 +519,11 @@ span {
     width: 80%;
   }
 
-  .multi img {
-    width: 80%;
-    height: auto;
-    margin-left: 50px;
-  }
-
   .recent {
     display: grid;
     grid-template-columns: 30% 70%;
     align-content: center;
     place-items: center;
-  }
-
-  .recent img {
-    margin-top: 15%;
-    width: 80%;
   }
 
   /* desktop-profession */
@@ -712,11 +697,6 @@ span {
 
   .form-list input {
     font-size: 3px;
-  }
-
-  form > ul {
-    max-width: 88%;
-    list-style: none;
   }
 
   .social-media-icon-2 {
