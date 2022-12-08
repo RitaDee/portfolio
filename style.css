@@ -207,6 +207,7 @@ button:active {
 }
 
 .profession ul {
+  display: flex;
   align-items: center;
   list-style-type: none;
   padding: 0;
@@ -229,6 +230,14 @@ article ul li {
 .skills-lang li {
   font-family: "Inter", sans-serif;
   font-size: 32px;
+}
+
+.social-media-icon-2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
 }
 
 .social-media-icon ul {
@@ -550,7 +559,6 @@ span {
   }
 
   .desktop-profession .img-profession .img-profession-btn {
-    /* background-image: url(./images/profession-1.png); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 369px;
@@ -646,7 +654,6 @@ span {
   }
 
   .about-me-d {
-    /* padding-top: 130px; */
     margin-left: 142px;
   }
 
@@ -692,6 +699,7 @@ span {
   }
 
   .form-inputs {
+    color: #505f79;
     margin-top: 130px;
   }
 
