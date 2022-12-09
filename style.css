@@ -29,6 +29,25 @@ body {
   font-size: 18px;
   line-height: 24px;
   height: 24px;
+  animation: rotate 5s 1 linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.data:hover {
+  transform: translate(-5px, -10px);
 }
 
 .navbar {
@@ -164,6 +183,7 @@ article button,
   margin-top: 12px;
   padding: 12px;
   border: none;
+  transition: background 2s;
 }
 
 button:hover {
