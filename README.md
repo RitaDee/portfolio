@@ -109,8 +109,7 @@ Example command:
 ```
 --->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
+## 🚀 Live Demo 
 
 - [Live Demo Link](https://ritadee.github.io/portfolio/)
 
