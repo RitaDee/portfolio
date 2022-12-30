@@ -374,21 +374,19 @@ span {
   background: inherit;
   font-weight: 400;
   border-bottom: 1px solid gray;
-  margin-bottom: 14px;
   font-size: 15px;
   line-height: 24px;
   display: block;
-  margin:  0 auto;
+  margin:  0 auto 14px auto;
 }
 
 #message {
   width: 327px;
-  margin-top: 25px;
   font-family: inherit;
   padding: 12px;
   background-color: #e5e5e5;
   display: block;
-  margin:  0 auto;
+  margin: 25px auto 0 auto;
 }
 
 .submit-btn {
@@ -574,10 +572,6 @@ span {
   }
 
   .desktop-profession {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%; */
-    /* margin-left: 50px; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(327px, 3fr));
     column-gap: 24px;
@@ -732,7 +726,7 @@ span {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
     width: 90%;
-    margin: 0 auto;;
+    margin: 0 auto;
   }
 
   .interest {
