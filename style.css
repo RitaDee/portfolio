@@ -134,6 +134,8 @@ article ul {
 
 .recent-works {
   display: grid;
+  width: 90%;
+  margin: 0 auto;
 }
 
 h2.title {
@@ -149,10 +151,11 @@ h2.title {
 }
 
 img.vector {
-  width: 327px;
+  width: 37px;
   height: 0;
   border: 1px solid #212121;
   margin: 0 24px 80px 24px;
+  background-color: #505f79;
 }
 
 img.themes {
@@ -200,7 +203,7 @@ button:active {
   background-image: url(./images/Bg\ Placeholder.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 80%;
+  width: 90%;
   height: 380px;
   margin: 24px 24px;
 }
@@ -357,6 +360,11 @@ span {
   margin-right: 10px;
 }
 
+.interest {
+  text-align: center;
+  width: 95%;
+}
+
 #name,
 #email {
   width: 327px;
@@ -366,17 +374,19 @@ span {
   background: inherit;
   font-weight: 400;
   border-bottom: 1px solid gray;
-  margin-bottom: 14px;
   font-size: 15px;
   line-height: 24px;
+  display: block;
+  margin: 0 auto 14px auto;
 }
 
 #message {
   width: 327px;
-  margin-top: 25px;
   font-family: inherit;
   padding: 12px;
   background-color: #e5e5e5;
+  display: block;
+  margin: 25px auto 0 auto;
 }
 
 .submit-btn {
@@ -567,9 +577,13 @@ label {
 
   .desktop-profession {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 75%;
-    margin-left: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(327px, 3fr));
+    column-gap: 24px;
+    width: 90%;
+    justify-content: start;
+    align-content: center;
+    margin: 0 auto 0 auto;
+    position: relative;
   }
 
   .desktop-profession .img-profession {
@@ -673,8 +687,8 @@ label {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-image: none;
-    margin: 0;
-    width: 100%;
+    margin: auto;
+    width: 99%;
   }
 
   .about-me-d {
@@ -714,7 +728,9 @@ label {
 
   .form-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
+    width: 90%;
+    margin: 0 auto;
   }
 
   .interest {
