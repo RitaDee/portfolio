@@ -562,10 +562,18 @@ span {
   }
 
   .desktop-profession {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 75%;
-    margin-left: 50px;
+    width: 100%; */
+    /* margin-left: 50px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(327px, 3fr));
+    column-gap: 24px;
+    width: 90%;
+    justify-content: start;
+    align-content: center;
+    margin: 0 auto 0 auto;
+    position: relative;
   }
 
   .desktop-profession .img-profession {
@@ -669,8 +677,8 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-image: none;
-    margin: 0;
-    width: 100%;
+    margin: auto;
+    width: 99%;
   }
 
   .about-me-d {
@@ -710,7 +718,9 @@ span {
 
   .form-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
+    width: 90%;
+    margin: 0 auto;;
   }
 
   .interest {
