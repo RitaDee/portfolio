@@ -575,20 +575,19 @@ span {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(327px, 3fr));
     column-gap: 24px;
-    width: 80%;
+    width: 90%;
     justify-content: start;
     align-content: center;
     margin: 0 auto 0 auto;
     position: relative;
-    flex-wrap: wrap;
   }
 
   .desktop-profession .img-profession {
     background-image: url(./images/profession-1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
-    margin: 24px auto 37px auto;
+    width: 369px;
+    margin: 24px 16px 37px 2px;
     background-position-y: bottom center;
     height: 435px;
   }
@@ -596,7 +595,7 @@ span {
   .desktop-profession .img-profession .img-profession-btn {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
+    width: 369px;
     margin: 24px 16px 37px 2px;
     background-position-y: bottom center;
   }
@@ -608,7 +607,7 @@ span {
     font-family: inherit;
     font-size: 17px;
     font-weight: 700;
-    width: 350px;
+    width: 369px;
     height: 48px;
     margin-bottom: -200px;
     border: none;
@@ -619,8 +618,8 @@ span {
     background-image: url(./images/profession-2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
-    margin: 24px auto 37px auto;
+    width: 369px;
+    margin: 24px 16px 37px 2px;
   }
 
   .data h1 {
@@ -645,8 +644,8 @@ span {
     background-image: url(./images/profession-3.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
-    margin: 24px auto 37px auto;
+    width: 369px;
+    margin: 24px 16px 37px 2px;
   }
 
   .data h2 {
@@ -661,9 +660,9 @@ span {
     background-image: url(./images/profession-4.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
+    width: 369px;
     height: 435px;
-    margin: 24px auto 37px auto;
+    margin: 24px 16px 37px 2px;
   }
 
   .data h3 {
