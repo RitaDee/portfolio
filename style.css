@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
 
 * {
   margin: 0;
@@ -394,7 +394,7 @@ span {
   max-width: 137px;
   background-color: #ff6b00;
   text-align: center;
-  margin-left: 91px;
+  margin-left: 120px;
   margin-top: 24px;
   border: none;
   padding: 11px;
@@ -424,10 +424,6 @@ span {
 
 .desktop-profession {
   display: none;
-}
-
-label {
-  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -728,6 +724,7 @@ label {
 
   .form-form {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
     width: 90%;
     margin: 0 auto;
@@ -735,7 +732,6 @@ label {
 
   .interest {
     margin-top: 130px;
-    margin-left: 135px;
   }
 
   .form-inputs {
