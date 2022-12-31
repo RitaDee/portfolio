@@ -729,7 +729,6 @@ span {
     grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
     width: 90%;
     margin: 0 auto;
-    flex-wrap: wrap;
   }
 
   .interest {
