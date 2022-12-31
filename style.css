@@ -426,10 +426,6 @@ span {
   display: none;
 }
 
-label {
-  visibility: hidden;
-}
-
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
