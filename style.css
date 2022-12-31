@@ -394,7 +394,7 @@ span {
   max-width: 137px;
   background-color: #ff6b00;
   text-align: center;
-  margin-left: 91px;
+  margin-left: 120px;
   margin-top: 24px;
   border: none;
   padding: 11px;
@@ -725,6 +725,7 @@ span {
 
   .form-form {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
     width: 90%;
     margin: 0 auto;
