@@ -573,7 +573,7 @@ span {
 
   .desktop-profession {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 3fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     grid-gap: 1em;
     width: 90%;
     justify-content: start;
