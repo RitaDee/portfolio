@@ -17,6 +17,10 @@ body {
   flex-direction: column;
 }
 
+.active {
+  display: none;
+}
+
 .logo {
   display: flex;
   color: #fff;
