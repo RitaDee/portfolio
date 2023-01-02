@@ -430,6 +430,19 @@ span {
   display: none;
 }
 
+.nav-item {
+  margin-bottom: 20px;
+  border-bottom: #6f6c6b 1px solid;
+
+}
+
+.nav-item a {
+  color: #fff;
+  font-size: 32px;
+  margin-left: 20%;
+  margin-top: 40%;
+}
+
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
@@ -455,6 +468,7 @@ span {
     font-size: 15px;
     font-family: "Inter", sans-serif;
   }
+
 
   .desktop-nav .link {
     color: #fff;
