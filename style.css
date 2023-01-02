@@ -278,7 +278,7 @@ article ul li {
 .profession ul li {
   color: #fff;
   border: 1px solid #8993a4;
-  padding: 10px 12px;
+  padding: 6px 10px;
   margin-right: 12px;
   font-size: inherit;
   font-size: 15px;
@@ -573,8 +573,8 @@ span {
 
   .desktop-profession {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(327px, 3fr));
-    column-gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 3fr));
+    grid-gap: 1em;
     width: 90%;
     justify-content: start;
     align-content: center;
@@ -586,16 +586,16 @@ span {
     background-image: url(./images/profession-1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 369px;
+    width: 100%;
     margin: 24px 16px 37px 2px;
     background-position-y: bottom center;
-    height: 435px;
+    height: 80%;
   }
 
   .desktop-profession .img-profession .img-profession-btn {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 369px;
+    width: 100%;
     margin: 24px 16px 37px 2px;
     background-position-y: bottom center;
   }
@@ -607,7 +607,7 @@ span {
     font-family: inherit;
     font-size: 17px;
     font-weight: 700;
-    width: 369px;
+    width: 100%;
     height: 48px;
     margin-bottom: -200px;
     border: none;
@@ -618,8 +618,9 @@ span {
     background-image: url(./images/profession-2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 369px;
+    width: 100%;
     margin: 24px 16px 37px 2px;
+    height: 80%;
   }
 
   .data h1 {
@@ -644,7 +645,7 @@ span {
     background-image: url(./images/profession-3.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 369px;
+    width: 100%;
     margin: 24px 16px 37px 2px;
   }
 
@@ -660,8 +661,8 @@ span {
     background-image: url(./images/profession-4.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 369px;
-    height: 435px;
+    width: 100%;
+    height: 80%;
     margin: 24px 16px 37px 2px;
   }
 
