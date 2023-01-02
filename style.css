@@ -17,8 +17,11 @@ body {
   flex-direction: column;
 }
 
-.active {
+.cancel {
   display: none;
+  margin-left: 90%;
+  margin-top: 24px;
+  position: absolute;
 }
 
 .logo {
@@ -432,15 +435,15 @@ span {
 
 .nav-item {
   margin-bottom: 20px;
-  border-bottom: #6f6c6b 1px solid;
-
+  border-bottom: 1px solid #6f6c6b;
+  padding-top: 45px;
 }
 
 .nav-item a {
   color: #fff;
   font-size: 32px;
-  margin-left: 20%;
-  margin-top: 40%;
+  margin-top: 50%;
+  background-color: #172b4d;
 }
 
 @media screen and (min-width: 768px) {
