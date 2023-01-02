@@ -1,8 +1,6 @@
 // hambuger
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-const logo = document.querySelector('.logo');
-const menu = document.querySelector(".pop-menu ul");
 
 hamburger.addEventListener('click', () => {
   // hamburger.classList.toggle('active');
@@ -16,19 +14,19 @@ document.querySelectorAll('.link').forEach((n) => n.addEventListener('click', ()
   navMenu.classList.remove('active');
 }));
 
-function showMobileMenu(){
-  //alert("why are you not working?");
-  let bg = "./images/overlay.png";
-  let navContainer = document.querySelector(".nav-container");
-  let dnav = document.querySelector(".desktop-nav");
-  let navbar = document.querySelector(".navbar");
-  const lastMenuItem = document.querySelector(".last-menu-item");
+function showMobileMenu() {
+  // alert("why are you not working?");
+  const bg = './images/overlay.png';
+  const navContainer = document.querySelector('.nav-container');
+  const dnav = document.querySelector('.desktop-nav');
+  const navbar = document.querySelector('.navbar');
+  const lastMenuItem = document.querySelector('.last-menu-item');
 
-  navContainer.style.backgroundImage = "url(" + bg + ")";
+  navContainer.style.backgroundImage = `url(${bg})`;
 
-  navContainer.style.display = "block";
-  dnav.style.display = "flex";
-  navbar.style.display = "none";
-  lastMenuItem.style.display = "none";
-  navContainer.classList.add("displayMenu");
+  navContainer.style.display = 'block';
+  dnav.style.display = 'flex';
+  navbar.style.display = 'none';
+  lastMenuItem.style.display = 'none';
+  navContainer.classList.add('displayMenu');
 }
