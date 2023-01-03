@@ -24,6 +24,10 @@ body {
   position: absolute;
 }
 
+.hamburger {
+  font: 1em sans-serif;
+}
+
 .logo {
   display: flex;
   color: #fff;
@@ -437,13 +441,19 @@ span {
   margin-bottom: 20px;
   border-bottom: 1px solid #6f6c6b;
   padding-top: 45px;
+  padding-left: 14px;
+  position: relative;
+  left: 20%;
+}
+
+.nav-item.active {
+  display: none;
 }
 
 .nav-item a {
   color: #fff;
   font-size: 32px;
   margin-top: 50%;
-  background-color: #172b4d;
 }
 
 @media screen and (min-width: 768px) {
@@ -471,7 +481,6 @@ span {
     font-size: 15px;
     font-family: "Inter", sans-serif;
   }
-
 
   .desktop-nav .link {
     color: #fff;

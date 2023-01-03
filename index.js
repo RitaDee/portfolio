@@ -1,5 +1,6 @@
 // hambuger
 const hamburger = document.querySelector('.hamburger');
+const cancel = document.querySelector('.cancel');
 
 function showMobileMenu() {
   const bg = './images/overlay.png';
@@ -7,7 +8,6 @@ function showMobileMenu() {
   const desktop = document.querySelector('.desktop-nav');
   const navbar = document.querySelector('.navbar');
   const lastMenuItem = document.querySelector('.last-menu-item');
-  const cancel = document.querySelector('.cancel');
 
   navContainer.style.backgroundImage = `url(${bg})`;
   cancel.style.display = 'block';
