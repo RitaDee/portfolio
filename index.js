@@ -1,12 +1,12 @@
 // hambuger
 const hamburger = document.querySelector('.hamburger');
 const cancel = document.querySelector('.cancel');
+const navContainer = document.querySelector('.nav-container');
+const navbar = document.querySelector('.navbar');
+const desktop = document.querySelector('.desktop-nav');
 
 function showMobileMenu() {
   const bg = './images/overlay.png';
-  const navContainer = document.querySelector('.nav-container');
-  const desktop = document.querySelector('.desktop-nav');
-  const navbar = document.querySelector('.navbar');
   const lastMenuItem = document.querySelector('.last-menu-item');
 
   navContainer.style.backgroundImage = `url(${bg})`;
@@ -17,6 +17,13 @@ function showMobileMenu() {
   lastMenuItem.style.display = 'none';
   navContainer.classList.add('displayMenu');
 }
+
+cancel.addEventListener('click', () => {
+  desktop.style.display = 'none';
+  navbar.style.display = 'flex';
+  navContainer.style.backgroundImage = 'none';
+  navContainer.classList.remove('displayMenu');
+});
 
 hamburger.addEventListener('click', () => {
   showMobileMenu();
