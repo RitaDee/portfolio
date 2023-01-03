@@ -11,15 +11,26 @@
 }
 
 body {
+  display: flex;
   width: 100%;
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
 }
 
+.cancel {
+  display: none;
+  margin-left: 90%;
+  margin-top: 24px;
+  position: absolute;
+}
+
+.hamburger {
+  font: 1em sans-serif;
+}
+
 .logo {
-  color: #fff;
   display: flex;
+  color: #fff;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -29,22 +40,39 @@ body {
   font-size: 18px;
   line-height: 24px;
   height: 24px;
+  animation: rotate 5s 1 linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.data:hover {
+  transform: translate(-5px, -10px);
 }
 
 .navbar {
-  width: 100%;
-  height: 48px;
-  background: #3c3a39;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 24px;
+  padding: 10px;
 }
 
 .main-container {
   width: 100%;
   min-height: calc(100vh - 48px);
-  background: url(./images/illustration-header-mobile.png) right bottom no-repeat;
+  background: url(./images/illustration-header-mobile.png) right bottom;
+  background-repeat: no-repeat;
   background-color: #1c1a19;
 }
 
@@ -55,9 +83,19 @@ body {
   padding-bottom: 100px;
 }
 
+footer > h1 {
+  font-family: "Inter", sans-serif;
+  color: #172b4d;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  vertical-align: top;
+  margin: 120px 24px 73px 24px;
+}
+
 .primary-text h1 {
-  color: #ff6b00;
   font-family: "Crete Round", sans-serif;
+  color: #ff6b00;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -78,7 +116,6 @@ body {
 
 article p {
   color: #091e42;
-  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -106,45 +143,17 @@ article ul {
   margin: 24px 24px 0 24px;
 }
 
-.social-media-icon ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 24px;
-}
-
-article ul li {
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
-  margin-right: 12px;
-  font-size: inherit;
-  font-size: 15px;
-}
-
-.skills-lang li {
-  font-size: 32px;
-  font-family: "Inter", sans-serif;
-}
-
-.lang li {
-  padding: 12px 0;
-  font-size: 22px;
-}
-
-.social-media-icon ul li {
-  padding: 0 12px;
-}
-
 .recent-works {
   display: grid;
+  width: 90%;
+  margin: 0 auto;
 }
 
 h2.title {
+  font-family: "Crete Round", sans-serif;
   width: 327px;
   height: 83px;
   margin: 120px 24px 24px 24px;
-  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -153,10 +162,11 @@ h2.title {
 }
 
 img.vector {
-  width: 327px;
+  width: 37px;
   height: 0;
   border: 1px solid #212121;
   margin: 0 24px 80px 24px;
+  background-color: #505f79;
 }
 
 img.themes {
@@ -177,8 +187,8 @@ article h3 {
 
 article button,
 .btn-resume {
-  background: #ff6b00;
   color: #fff;
+  background: #ff6b00;
   font-family: inherit;
   line-height: 24px;
   font-size: 17px;
@@ -187,6 +197,7 @@ article button,
   margin-top: 12px;
   padding: 12px;
   border: none;
+  transition: background 2s;
 }
 
 button:hover {
@@ -202,9 +213,10 @@ button:active {
 .profession {
   background-image: url(./images/Bg\ Placeholder.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 80%;
-  margin: 24px auto;
+  background-size: cover;
+  width: 90%;
+  height: 380px;
+  margin: 24px 24px;
 }
 
 .profession h4 {
@@ -214,7 +226,8 @@ button:active {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  margin: 84px 16px 0 16px;
+  margin: 74px 16px 12px 16px;
+  padding-top: 80px;
 }
 
 .profession p {
@@ -235,25 +248,62 @@ button:active {
   margin: 12px 24px 24px 16px;
 }
 
-.profession ul li {
+article ul li {
   border: 1px solid #8993a4;
   padding: 10px 12px;
   margin-right: 12px;
   font-size: inherit;
   font-size: 15px;
+}
+
+.lang li {
+  padding: 12px 0;
+  font-size: 22px;
+}
+
+.skills-lang li {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+}
+
+.social-media-icon-2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.social-media-icon ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 24px;
+}
+
+.social-media-icon ul li {
+  padding: 0 12px;
+}
+
+.profession ul li {
   color: #fff;
+  border: 1px solid #8993a4;
+  padding: 6px 10px;
+  margin-right: 12px;
+  font-size: inherit;
+  font-size: 15px;
   background-color: rgba(255, 255, 255, 0.24);
 }
 
 .btn-project {
   background: #ff6b00;
-  color: #fff;
   font-family: inherit;
   font-size: 17px;
   font-weight: 700;
   width: 100%;
   height: 48px;
-  margin: -3px auto 0 auto;
+  margin: 12px 24px 120px 0;
   border: none;
 }
 
@@ -266,10 +316,10 @@ button:active {
 }
 
 section h5 {
+  font-family: "Crete Round", sans-serif;
   color: #ff6b00;
   letter-spacing: 0.37px;
   margin: 120px 24px 12px 24px;
-  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -280,7 +330,6 @@ section h5 {
 
 .about-me p {
   color: #f4f5f7;
-  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -288,7 +337,8 @@ section h5 {
   margin: 24px 24px;
 }
 
-.btn-resume {
+.about-me p,
+.submit-btn {
   font-family: "Inter", sans-serif;
 }
 
@@ -300,8 +350,8 @@ img.vector4 {
 }
 
 .skills-lang {
-  font-family: "Crete round", sans-serif;
   color: #fff;
+  font-family: "Crete Round", sans-serif;
   text-align: center;
   margin-bottom: 35px;
 }
@@ -319,4 +369,440 @@ img.vector4 {
 
 span {
   margin-right: 10px;
+}
+
+.interest {
+  text-align: center;
+  width: 95%;
+}
+
+#name,
+#email {
+  width: 327px;
+  font-family: inherit;
+  padding: 10px;
+  border: none;
+  background: inherit;
+  font-weight: 400;
+  border-bottom: 1px solid gray;
+  font-size: 15px;
+  line-height: 24px;
+  display: block;
+  margin: 0 auto 14px auto;
+}
+
+#message {
+  width: 327px;
+  font-family: inherit;
+  padding: 12px;
+  background-color: #e5e5e5;
+  display: block;
+  margin: 25px auto 0 auto;
+}
+
+.submit-btn {
+  height: 42px;
+  max-width: 137px;
+  background-color: #ff6b00;
+  text-align: center;
+  margin-left: 120px;
+  margin-top: 24px;
+  border: none;
+  padding: 11px;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.solid {
+  width: 100%;
+  margin-top: 124px;
+  margin-bottom: 20px;
+  border-top: 1px solid #dfe1e6;
+}
+
+.nav-container {
+  background: #3c3a39;
+  width: 100%;
+}
+
+.desktop-nav {
+  background-color: #3e3c3c;
+  display: none;
+}
+
+.desktop-profession {
+  display: none;
+}
+
+.nav-item {
+  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-left: 14px;
+  position: relative;
+  left: 2%;
+}
+
+.nav-item.active {
+  display: none;
+}
+
+.nav-item a {
+  color: #fff5e1;
+  font-size: 32px;
+  margin-top: 5%;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+.seperator {
+  margin-right: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .seperator {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .nav-menu {
+    display: flex;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .desktop-nav .link {
+    color: #fff;
+    margin: 16px 16px;
+  }
+
+  /* main-container */
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .para-container {
+    width: 90%;
+    margin: 5% 5%;
+  }
+
+  .primary h1 {
+    margin-top: 192px;
+    font-size: 72px;
+    font-family: "crete", sans-serif;
+    line-height: 81.5px;
+    font-weight: 400;
+  }
+
+  .primary-text h2 {
+    font-family: "inter", sans-serif;
+    font-size: 32px;
+  }
+
+  .img-cont {
+    background-image: url(./images/media.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%;
+    width: 100%;
+    margin-bottom: 45px;
+    align-items: flex-end;
+  }
+
+  form > ul {
+    max-width: 88%;
+    list-style: none;
+  }
+
+  form ul {
+    margin: 0 auto;
+    max-width: 88%;
+    list-style: none;
+  }
+
+  .social-media-icon ul {
+    display: grid;
+    float: left;
+    position: absolute;
+    left: 2%;
+    top: 310px;
+    gap: 12px;
+  }
+
+  .multi img {
+    width: 80%;
+    height: auto;
+    margin-left: 50px;
+  }
+
+  .recent img {
+    margin-top: 15%;
+    width: 80%;
+  }
+
+  .social-media-icon ul img {
+    width: 24px;
+    height: 30px;
+  }
+
+  .primary-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 0.5rem;
+    position: absolute;
+    left: 10%;
+  }
+
+  article p {
+    font-family: "inter", sans-serif;
+  }
+
+  .primary-text p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "inter", sans-serif;
+    line-height: 36px;
+    max-width: 65%;
+  }
+
+  /* recent-works */
+
+  .multi {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 24px;
+    width: 80%;
+  }
+
+  .recent {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-content: center;
+    place-items: center;
+  }
+
+  /* desktop-profession */
+
+  .prof {
+    display: none;
+  }
+
+  .desktop-profession {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-gap: 1em;
+    width: 90%;
+    justify-content: start;
+    align-content: center;
+    margin: 0 auto 0 auto;
+    position: relative;
+  }
+
+  .desktop-profession .img-profession {
+    background-image: url(./images/profession-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 24px 16px 37px 2px;
+    background-position-y: bottom 10px;
+    height: 80%;
+  }
+
+  .desktop-profession .img-profession .img-profession-btn {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 24px 16px 37px 2px;
+    background-position-y: bottom 10px;
+  }
+
+  .btn-project-btn {
+    position: relative;
+    bottom: -350px;
+    background: #ff6b00;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 700;
+    width: 100%;
+    height: 48px;
+    margin-bottom: -200px;
+    border: none;
+    color: #fff;
+  }
+
+  .data-profession {
+    background-image: url(./images/profession-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 24px 16px 37px 2px;
+    height: 80%;
+  }
+
+  .data h1 {
+    color: #fff;
+    font-family: "Crete Round", serif;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 174px 16px 16px 24px;
+  }
+
+  .data p {
+    font-family: "inter", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 24px;
+  }
+
+  .website-profession {
+    background-image: url(./images/profession-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 24px 16px 37px 2px;
+  }
+
+  .data h2 {
+    color: #fff;
+    font-family: "Crete Round", serif;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 221px 16px 16px 24px;
+  }
+
+  .art-profession {
+    background-image: url(./images/profession-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    margin: 24px 16px 37px 2px;
+  }
+
+  .data h3 {
+    color: #fff;
+    font-family: "Crete Round", serif;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 174px 16px 16px 24px;
+  }
+
+  .data {
+    height: 435px;
+  }
+
+  /* ----------------------about-me section--------------------------------- */
+
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: none;
+    margin: auto;
+    width: 99%;
+  }
+
+  .about-me-d {
+    margin-left: 142px;
+  }
+
+  .about-me-d h5 {
+    font-family: "Crete Round", serif;
+    font-size: 72px;
+    line-height: 81.5px;
+    vertical-align: top;
+  }
+
+  .about-me p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    vertical-align: top;
+  }
+
+  .bg {
+    background-image: url(./images/about-me-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 100px;
+    min-height: calc(50vh - 24px);
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #1c1a19;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 0;
+  }
+
+  .form-form {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .interest {
+    margin-top: 130px;
+  }
+
+  .form-inputs {
+    color: #505f79;
+    margin-top: 130px;
+  }
+
+  .form-list input {
+    font-size: 3px;
+  }
+
+  .social-media-icon-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .social-media-icon-2 hr {
+    width: 100%;
+  }
+
+  .social-media-icon-2 ul {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+.displayMenu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
 }
