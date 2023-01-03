@@ -442,7 +442,7 @@ span {
   padding-top: 55px;
   padding-left: 14px;
   position: relative;
-  left: 20%;
+  left: 2%;
 }
 
 .nav-item.active {
@@ -453,10 +453,11 @@ span {
   color: #fff5e1;
   font-size: 32px;
   margin-top: 10%;
+  font-style: bold;
 }
 
 .seperator {
-  padding-right: 24px;
+  margin-right: 35px;
 }
 
 @media screen and (min-width: 768px) {
