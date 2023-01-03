@@ -618,7 +618,7 @@ span {
     background-size: cover;
     width: 100%;
     margin: 24px 16px 37px 2px;
-    background-position-y: bottom center;
+    background-position-y: bottom 10px;
     height: 80%;
   }
 
@@ -627,7 +627,7 @@ span {
     background-size: cover;
     width: 100%;
     margin: 24px 16px 37px 2px;
-    background-position-y: bottom center;
+    background-position-y: bottom 10px;
   }
 
   .btn-project-btn {
