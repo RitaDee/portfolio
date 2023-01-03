@@ -453,7 +453,8 @@ span {
   color: #fff5e1;
   font-size: 32px;
   margin-top: 5%;
-  font-style: bold;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
 }
 
 .seperator {
