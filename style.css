@@ -439,7 +439,7 @@ span {
 
 .nav-item {
   margin-bottom: 20px;
-  padding-top: 55px;
+  padding-top: 12px;
   padding-left: 14px;
   position: relative;
   left: 2%;
@@ -452,7 +452,7 @@ span {
 .nav-item a {
   color: #fff5e1;
   font-size: 32px;
-  margin-top: 10%;
+  margin-top: 5%;
   font-style: bold;
 }
 

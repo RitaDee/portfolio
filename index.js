@@ -4,6 +4,7 @@ const cancel = document.querySelector('.cancel');
 const navContainer = document.querySelector('.nav-container');
 const navbar = document.querySelector('.navbar');
 const desktop = document.querySelector('.desktop-nav');
+const navPosition = document.querySelector('.nav-menu');
 
 function showMobileMenu() {
   const bg = './images/overlay.png';
@@ -16,6 +17,7 @@ function showMobileMenu() {
   navbar.style.display = 'none';
   lastMenuItem.style.display = 'none';
   navContainer.classList.add('displayMenu');
+  navPosition.style.marginTop = '40px';
 }
 
 function hideMobileMenu() {
