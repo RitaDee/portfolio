@@ -18,13 +18,25 @@ function showMobileMenu() {
   navContainer.classList.add('displayMenu');
 }
 
-cancel.addEventListener('click', () => {
+function hideMobileMenu(){
   desktop.style.display = 'none';
   navbar.style.display = 'flex';
   navContainer.style.backgroundImage = 'none';
   navContainer.classList.remove('displayMenu');
+}
+
+cancel.addEventListener('click', () => {
+  hideMobileMenu();
 });
 
 hamburger.addEventListener('click', () => {
   showMobileMenu();
+});
+
+const menuItems = document.querySelectorAll(".nav-item");
+
+menuItems.forEach(item => {
+  item.addEventListener("click",() =>{
+    hideMobileMenu();
+  });
 });
