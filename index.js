@@ -18,7 +18,7 @@ function showMobileMenu() {
   navContainer.classList.add('displayMenu');
 }
 
-function hideMobileMenu(){
+function hideMobileMenu() {
   desktop.style.display = 'none';
   navbar.style.display = 'flex';
   navContainer.style.backgroundImage = 'none';
@@ -33,10 +33,10 @@ hamburger.addEventListener('click', () => {
   showMobileMenu();
 });
 
-const menuItems = document.querySelectorAll(".nav-item");
+const menuItems = document.querySelectorAll('.nav-item');
 
-menuItems.forEach(item => {
-  item.addEventListener("click",() =>{
+menuItems.forEach((item) => {
+  item.addEventListener('click', () => {
     hideMobileMenu();
   });
 });
