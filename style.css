@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Inter&family=Roboto:wght@700&display=swap");
 
 * {
   margin: 0;
@@ -461,6 +461,122 @@ span {
   margin-right: 35px;
 }
 
+.modal-container {
+  display: none;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #979493;
+  overflow: hidden;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin-left: 16px;
+  max-width: 90%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.modal-pop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.modal-pop img {
+  width: 12px;
+  height: 12px;
+  margin-right: 32px;
+}
+
+.modal-container h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.modal p {
+  color: #344563;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  width: 95%;
+}
+
+.modal-btn {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.modal-btn img {
+  margin-left: 8px;
+}
+
+.btn-1,
+.btn-2 {
+  height: 42px;
+  background-color: #ff6b00;
+  text-align: center;
+  margin-left: 2px;
+  margin-top: 8px;
+  border: none;
+  padding: 13px;
+  color: white;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.modal-tech {
+  width: 100%;
+}
+
+.modal-tech ul {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.modal-tech ul li {
+  font-family: "Poppins", sans-serif;
+  color: #3c3a39;
+  padding: 8px;
+  border: 1px solid #979493;
+  font-weight: 600;
+  font-size: 13px;
+  width: auto;
+  align-self: center;
+  text-align: center;
+}
+
+.modal-img {
+  background-image: url(./images/Pop-up.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 220px;
+  margin-top: 24px;
+}
+
+/* .desktop-img-btn {
+  display: none;
+} */
+
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
@@ -468,6 +584,14 @@ span {
 
   .seperator {
     display: none;
+  }
+
+  .projects {
+    display: none;
+  }
+
+  .modal-container {
+    z-index: 99;
   }
 
   .desktop-nav {
@@ -612,7 +736,7 @@ span {
 
   .desktop-profession {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
     grid-gap: 1em;
     width: 90%;
     justify-content: start;
