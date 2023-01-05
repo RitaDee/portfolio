@@ -91,7 +91,6 @@ const projects = [
 ];
 
 const projectSection = document.getElementById('project-section');
-
 for (let i = 0; i < projects.length; i += 1) {
   projectSection.innerHTML += `
     <div class="profession">
@@ -136,20 +135,26 @@ function populatePopUpData(data) {
   popUpContainer.style.position = 'fixed';
 }
 
-for (let i = 0; i < projectButtons.length; i += 1) {
-  populatePopUpData(projects[i]);
-}
+// for (let i = 0; i < projectButtons.length; i += 1) {
+//   //populatePopUpData(projects[i]);
+// }
 
-projectButtons.forEach((btn) => {
+projectButtons.forEach((btn, i) => {
   btn.addEventListener('click', () => {
     popUpContainer.style.display = 'flex';
+    populatePopUpData(projects[i]);
   });
 });
 
-const closeIcons = document.querySelectorAll('.pop-close');
-
+const closeIcons = document.querySelector('.pop-close');
 closeIcons.forEach((btn) => {
   btn.addEventListener('click', () => {
     popUpContainer.style.display = 'none';
   });
+});
+
+const seeProjectBtn = document.querySelector('.btn-project-btn');
+seeProjectBtn.addEventListener("click", () => {
+  popUpContainer.style.display = "flex";
+  populatePopUpData(projects[0]);
 });

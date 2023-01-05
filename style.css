@@ -469,6 +469,12 @@ span {
   padding: 10px;
   background-color: #979493;
   overflow: hidden;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .modal {
@@ -591,7 +597,86 @@ span {
   }
 
   .modal-container {
+    display: none;
     z-index: 99;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px;
+    margin-left: 16px;
+    width: 70%;
+    height: 60vh;
+    background-color: #fff;
+  }
+
+  .modal-container h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  .modal-pop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .modal-tech {
+    width: 100%;
+  }
+  
+  .modal-tech ul {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+  }
+  
+  .modal-tech ul li {
+    font-family: "Poppins", sans-serif;
+    color: #3c3a39;
+    padding: 8px;
+    border: 1px solid #979493;
+    font-weight: 600;
+    font-size: 13px;
+    width: auto;
+    align-self: center;
+    text-align: center;
+  }
+
+  .modal-img {
+    align-items: flex-start;
+    background-image: url(./images/Pop-up.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60%;
+    height: 35%;
+    position: absolute;
+    right: 22%;
+    top: 35%;
+  }
+
+  .modal p {
+    position: absolute;
+    left: 59%;
+    top: 36%;
+    width: 26%;
+  }
+
+  .modal-btn {
+    position: absolute;
+    top: 67%;
+    left: 59%;
+    width: 24%;
   }
 
   .desktop-nav {
