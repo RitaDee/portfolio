@@ -469,7 +469,6 @@ span {
   padding: 10px;
   background-color: #979493;
   overflow: hidden;
-
   position: fixed;
   top: 0;
   bottom: 0;
@@ -500,6 +499,10 @@ span {
   width: 12px;
   height: 12px;
   margin-right: 32px;
+}
+
+.pop-close {
+  background-color: red;
 }
 
 .modal-container h3 {
@@ -628,19 +631,19 @@ span {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .modal-tech {
     width: 100%;
   }
-  
+
   .modal-tech ul {
     display: flex;
     justify-content: space-between;
     width: 20%;
   }
-  
+
   .modal-tech ul li {
     font-family: "Poppins", sans-serif;
     color: #3c3a39;

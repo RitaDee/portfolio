@@ -136,7 +136,7 @@ function populatePopUpData(data) {
 }
 
 // for (let i = 0; i < projectButtons.length; i += 1) {
-//   //populatePopUpData(projects[i]);
+//   populatePopUpData(projects[i]);
 // }
 
 projectButtons.forEach((btn, i) => {
@@ -146,15 +146,17 @@ projectButtons.forEach((btn, i) => {
   });
 });
 
-const closeIcons = document.querySelector('.pop-close');
+const closeIcons = document.querySelectorAll('.pop-close');
+console.log('closeIcons', closeIcons);
 closeIcons.forEach((btn) => {
   btn.addEventListener('click', () => {
+    console.log('Hello');
     popUpContainer.style.display = 'none';
   });
 });
 
 const seeProjectBtn = document.querySelector('.btn-project-btn');
-seeProjectBtn.addEventListener("click", () => {
-  popUpContainer.style.display = "flex";
+seeProjectBtn.addEventListener('click', () => {
+  popUpContainer.style.display = 'flex';
   populatePopUpData(projects[0]);
 });
