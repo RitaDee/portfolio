@@ -101,9 +101,6 @@ for (let i = 0; i < projects.length; i += 1) {
           <li>${projects[i].technologies[1]}</li>
           <li>${projects[i].technologies[2]}</li>
         </ul>
-        <button aria-label="view" class="btn-project" type="button">
-          See Project
-        </button>
       </div>`;
 }
 

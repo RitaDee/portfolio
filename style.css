@@ -501,10 +501,6 @@ span {
   margin-right: 32px;
 }
 
-.pop-close {
-  background-color: red;
-}
-
 .modal-container h3 {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
@@ -646,9 +642,7 @@ span {
   }
 
   .modal-tech ul {
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
+    width: 25%;
   }
 
   .modal-tech ul li {
@@ -658,7 +652,7 @@ span {
     border: 1px solid #979493;
     font-weight: 600;
     font-size: 13px;
-    width: auto;
+    /* width: ; */
     align-self: center;
     text-align: center;
   }
@@ -667,12 +661,13 @@ span {
     align-items: flex-start;
     background-image: url(./images/Pop-up.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 60%;
+    background-size: cover;
+    width: 35%;
     height: 35%;
     position: absolute;
-    right: 22%;
+    right: 48%;
     top: 35%;
+    background-color: red;
   }
 
   article p {
@@ -681,7 +676,7 @@ span {
 
   .modal p {
     position: absolute;
-    left: 59%;
+    left: 54%;
     top: 36%;
     width: 26%;
   }
@@ -689,7 +684,7 @@ span {
   .modal-btn {
     position: absolute;
     top: 67%;
-    left: 59%;
+    left: 54%;
     width: 24%;
   }
 
