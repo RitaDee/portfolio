@@ -115,7 +115,7 @@ function populatePopUpData(data) {
   <div class="modal">
         <div class="modal-pop">
           <h3>${data.name}</h3>
-          <img class="pop-close" src="./images/cancel_icon.png" alt="">
+          <img class="pop-close" src="${data.closeIcon}" alt="">
         </div>
         
         <div class="modal-tech">
@@ -133,25 +133,19 @@ function populatePopUpData(data) {
         </div>
       </div>`;
   popUpContainer.style.position = 'fixed';
-}
 
-// for (let i = 0; i < projectButtons.length; i += 1) {
-//   populatePopUpData(projects[i]);
-// }
+  const closeIcons = document.querySelectorAll('.pop-close');
+  closeIcons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      popUpContainer.style.display = 'none';
+    });
+  });
+}
 
 projectButtons.forEach((btn, i) => {
   btn.addEventListener('click', () => {
     popUpContainer.style.display = 'flex';
     populatePopUpData(projects[i]);
-  });
-});
-
-const closeIcons = document.querySelectorAll('.pop-close');
-console.log('closeIcons', closeIcons);
-closeIcons.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    console.log('Hello');
-    popUpContainer.style.display = 'none';
   });
 });
 
