@@ -111,7 +111,7 @@ const projectButtons = document.querySelectorAll('.btn-project');
 const popUpContainer = document.querySelector('.modal-container');
 
 function populatePopUpData(data) {
-  popUpContainer.innerHTML += `
+  popUpContainer.innerHTML = `
   <div class="modal">
         <div class="modal-pop">
           <h3>${data.name}</h3>
