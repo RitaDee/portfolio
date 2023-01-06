@@ -25,4 +25,4 @@ function storeData() {
     UserText: message.value,
   };
   localStorage.setItem('user', JSON.stringify(user));
-}""
+}
