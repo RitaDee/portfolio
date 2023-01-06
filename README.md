@@ -115,13 +115,17 @@ Example command:
 > Mention all of the collaborators of this project.
 
 👤 **Rita Daniel**
-👤 **Frempongdev**
-👤 **Jonas-45**
-
 
 - GitHub: [@githubhandle](https://github.com/RitaDee)
 - Twitter: [@twitterhandle](https://twitter.com/durdana_dee)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rita-daniel/)
+
+👤 **Frempongdev**
+
+GitHub: [@githubhandle](https://github.com/frempongdev)
+
+👤 **Jonas-45**
+[@githubhandle](https://github.com/jonas-45)
 
 <!-- Feat<!-- Features -->
 
