@@ -177,10 +177,6 @@ mobButtons.forEach((btn, i) => {
   });
 });
 
-// multiButton.addEventListener('click', function(){
-//   populatePopUpData(multi)
-// })
-
 const seeProjectBtn = document.querySelector('.btn-project-btn');
 seeProjectBtn.addEventListener('click', () => {
   popUpContainer.style.display = 'flex';
