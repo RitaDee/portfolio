@@ -467,7 +467,8 @@ span {
   align-content: center;
   width: 100%;
   padding: 10px;
-  background-color: #979493;
+  background-color: rgba(26, 20, 20, 0.7);
+  backdrop-filter: blur(8px);
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -545,6 +546,7 @@ span {
   line-height: 24px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
+  align-self: center;
 }
 
 .modal-tech {
@@ -586,6 +588,12 @@ span {
   .seperator {
     display: none;
   }
+
+  /* .unique-btn {
+    position: absolute;
+    bottom: -113px;
+    width: 49.1%;
+  } */
 
   .projects {
     display: none;
@@ -801,6 +809,11 @@ span {
     width: 80%;
   }
 
+  span img {
+    background-color: red;
+    display: inline;
+  }
+
   .recent {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -812,6 +825,21 @@ span {
 
   .prof {
     display: none;
+  }
+
+  .pro-btn {
+    background: #ff6b00;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 48px;
+    color: #fff;
+    width: 100%;
+    border: none;
   }
 
   .desktop-profession {

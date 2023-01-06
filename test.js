@@ -1,6 +1,20 @@
 const projects = [
+  // {
+  //   id: '1',
+  //   name: 'Multi Post',
+  //   cardImage: './images/profession-1.png',
+  //   closeIcon: './images/cancel_icon.png',
+  //   popImage: '/images/Pop-up.png',
+  //   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+  //   infoPop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  //   technologies: ['html', 'Bootstrap', 'Ruby on rails'],
+  //   liveText: 'See Live',
+  //   seeIcon: './images/see-icon.png',
+  //   sourceText: 'See Source',
+  //   liveLink: 'https://ritadee.github.io/portfolio/',
+  // },
   {
-    id: '1',
+    id: '2',
     name: 'Profesional Art Printing Data',
     cardImage: './images/profession-1.png',
     closeIcon: './images/cancel_icon.png',
@@ -75,7 +89,7 @@ const projects = [
   },
 
   {
-    id: '6',
+    id: '7',
     name: 'Profesional Art Printing Data',
     cardImage: './images/profession-1.png',
     closeIcon: './images/cancel_icon.png',
@@ -101,13 +115,13 @@ for (let i = 0; i < projects.length; i += 1) {
           <li>${projects[i].technologies[1]}</li>
           <li>${projects[i].technologies[2]}</li>
         </ul>
-        <button aria-label="view" class="btn-project" type="button">
+        <button aria-label="view" class="btn-project see-project" type="button">
           See Project
         </button>
       </div>`;
 }
 
-const projectButtons = document.querySelectorAll('.btn-project');
+const projectButtons = document.querySelectorAll('.see-project');
 const popUpContainer = document.querySelector('.modal-container');
 
 function populatePopUpData(data) {
@@ -154,3 +168,31 @@ seeProjectBtn.addEventListener('click', () => {
   popUpContainer.style.display = 'flex';
   populatePopUpData(projects[0]);
 });
+
+// const multiPost = document.querySelector('.multi');
+// const multiBtn = document.querySelector('.btn-multi');
+// const cancelMulti = document.querySelector('.cancel-multi');
+
+// multiBtn.addEventListener('click', () => {
+//   multiPost.style.position = 'fixed';
+//   multiPost.style.width = '100%';
+//   multiPost.style.height = '100vh';
+//   multiPost.style.left = '0';
+//   multiPost.style.top = '0';
+//   multiPost.style.bottom = '0';
+//   multiPost.style.right = '0';
+//   multiPost.style.zIndex = '99';
+//   multiPost.style.backgroundColor = '#fff';
+// });
+
+// cancelMulti.addEventListener('click', () => {
+//   multiPost.style.display ='grid';
+//   multiPost.style.gridTemplateColumn = '70%, 30%'
+//   multiPost.style.gap = '24px'
+//   multiPost.style.width = '80%'
+//   multiPost.style.backgroundColor = 'green';
+//   multiPost.style.zIndex = '79';
+// });
+
+
+
