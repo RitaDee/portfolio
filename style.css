@@ -589,12 +589,6 @@ span {
     display: none;
   }
 
-  /* .unique-btn {
-    position: absolute;
-    bottom: -113px;
-    width: 49.1%;
-  } */
-
   .projects {
     display: none;
   }
@@ -828,11 +822,12 @@ span {
   }
 
   .pro-btn {
+    /* visibility: hidden; */
     background: #ff6b00;
     font-family: inherit;
     font-size: 17px;
     font-weight: 700;
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 0;
     left: 0;
@@ -840,6 +835,12 @@ span {
     color: #fff;
     width: 100%;
     border: none;
+  }
+
+  .pro-btn:hover {
+    background-color: #fff5e1;
+    color: #f55800;
+    /* visibility: visible; */
   }
 
   .desktop-profession {
