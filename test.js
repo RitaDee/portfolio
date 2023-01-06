@@ -127,28 +127,9 @@ const projectButtons = document.querySelectorAll('.desk');
 
 const mobButtons = document.querySelectorAll('.mob');
 
-
 const popUpContainer = document.querySelector('.modal-container');
 
-
-projectButtons.forEach((btn, i) => {
-  console.log(btn, i, projects[i])
-  btn.addEventListener('click', () => {
-    popUpContainer.style.display = 'flex';
-    populatePopUpData(projects[i]);
-  });
-});
-
-mobButtons.forEach((btn, i) => {
-  console.log(btn, i, projects[i])
-  btn.addEventListener('click', () => {
-    popUpContainer.style.display = 'flex';
-    populatePopUpData(projects[i]);
-  });
-});
-
 function populatePopUpData(data) {
-  console.log(data, 'This is the data')
   popUpContainer.innerHTML = `
   <div class="modal">
         <div class="modal-pop">
@@ -182,6 +163,20 @@ function populatePopUpData(data) {
   });
 }
 
+projectButtons.forEach((btn, i) => {
+  btn.addEventListener('click', () => {
+    popUpContainer.style.display = 'flex';
+    populatePopUpData(projects[i]);
+  });
+});
+
+mobButtons.forEach((btn, i) => {
+  btn.addEventListener('click', () => {
+    popUpContainer.style.display = 'flex';
+    populatePopUpData(projects[i]);
+  });
+});
+
 // multiButton.addEventListener('click', function(){
 //   populatePopUpData(multi)
 // })
@@ -191,5 +186,3 @@ seeProjectBtn.addEventListener('click', () => {
   popUpContainer.style.display = 'flex';
   populatePopUpData(projects[0]);
 });
-
-
