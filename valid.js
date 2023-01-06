@@ -12,7 +12,6 @@ function formValidate(event) {
     error.innerHTML = 'Please input your email address in lowercase.';
     event.preventDefault();
   } else {
-    console.log('HEY');
     error.style.visibility = 'hidden';
   }
 }
@@ -36,4 +35,3 @@ if (data) {
   email.value = data.UserEmail;
   message.value = data.UserText;
 }
-

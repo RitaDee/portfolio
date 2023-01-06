@@ -182,4 +182,3 @@ seeProjectBtn.addEventListener('click', () => {
   popUpContainer.style.display = 'flex';
   populatePopUpData(projects[0]);
 });
-
