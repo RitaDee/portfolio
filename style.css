@@ -1058,3 +1058,7 @@ span {
   height: 100%;
   position: fixed;
 }
+
+#error-message {
+  color: red;
+}
