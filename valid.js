@@ -25,13 +25,4 @@ function storeData() {
     UserText: message.value,
   };
   localStorage.setItem('user', JSON.stringify(user));
-}
-userName.addEventListener('focusout', storeData);
-email.addEventListener('focusout', storeData);
-message.addEventListener('focusout', storeData);
-const data = JSON.parse(localStorage.getItem('user'));
-if (data) {
-  userName.value = data.UserName;
-  email.value = data.UserEmail;
-  message.value = data.UserText;
-}
+}""
