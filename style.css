@@ -467,7 +467,7 @@ span {
   align-content: center;
   width: 100%;
   padding: 10px;
-  background-color: rgba(26, 20, 20, 0.7);
+  background-color: rgba(26, 20, 20, 0.9);
   backdrop-filter: blur(8px);
   overflow: hidden;
   position: fixed;
@@ -581,7 +581,7 @@ span {
   margin-top: 24px;
 }
 
-.modal-img img{
+.modal-img img {
   width: 100%;
   height: 100%;
 }
@@ -767,6 +767,11 @@ span {
     gap: 12px;
   }
 
+  span img {
+    background-color: red;
+    display: inline;
+  }
+
   .multi img {
     width: 80%;
     height: auto;
@@ -809,11 +814,6 @@ span {
     width: 80%;
   }
 
-  span img {
-    background-color: red;
-    display: inline;
-  }
-
   .recent {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -843,18 +843,66 @@ span {
     border: none;
   }
 
-  .profession:hover > .pro-btn {
-    display: block;
+  .data h3 {
+    color: #fff;
+    font-family: "Crete Round", serif;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 174px 16px 16px 24px;
   }
 
-  .profession:hover > h1, .profession:hover > h2, .profession:hover h3, .profession:hover > ul li ,.profession:hover > p{
-    display: none;
+  .data {
+    height: 435px;
+  }
+
+  .data h1 {
+    color: #fff;
+    font-family: "Crete Round", serif;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 174px 16px 16px 24px;
+  }
+
+  .data p {
+    font-family: "inter", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 24px;
+  }
+
+  .data h2 {
+    color: #fff;
+    font-family: "Crete Round", serif;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 221px 16px 16px 24px;
+  }
+
+  .about-me p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    vertical-align: top;
   }
 
   .pro-btn:hover {
     background-color: #fff5e1;
     color: #f55800;
-    /* visibility: visible; */
+  }
+
+  .profession:hover > .pro-btn {
+    display: block;
+  }
+
+  .profession:hover > h1,
+  .profession:hover > h2,
+  .profession:hover h3,
+  .profession:hover > ul li,
+  .profession:hover > p {
+    display: none;
   }
 
   .desktop-profession {
@@ -909,38 +957,12 @@ span {
     height: 80%;
   }
 
-  .data h1 {
-    color: #fff;
-    font-family: "Crete Round", serif;
-    font-size: 32px;
-    line-height: 44px;
-    margin: 174px 16px 16px 24px;
-  }
-
-  .data p {
-    font-family: "inter", sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-bottom: 24px;
-  }
-
   .website-profession {
     background-image: url(./images/profession-3.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     margin: 24px 16px 37px 2px;
-  }
-
-  .data h2 {
-    color: #fff;
-    font-family: "Crete Round", serif;
-    font-size: 32px;
-    line-height: 44px;
-    margin: 221px 16px 16px 24px;
   }
 
   .art-profession {
@@ -950,18 +972,6 @@ span {
     width: 100%;
     height: 80%;
     margin: 24px 16px 37px 2px;
-  }
-
-  .data h3 {
-    color: #fff;
-    font-family: "Crete Round", serif;
-    font-size: 32px;
-    line-height: 44px;
-    margin: 174px 16px 16px 24px;
-  }
-
-  .data {
-    height: 435px;
   }
 
   /* ----------------------about-me section--------------------------------- */
@@ -982,13 +992,6 @@ span {
     font-family: "Crete Round", serif;
     font-size: 72px;
     line-height: 81.5px;
-    vertical-align: top;
-  }
-
-  .about-me p {
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    line-height: 32px;
     vertical-align: top;
   }
 
