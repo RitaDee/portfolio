@@ -547,6 +547,8 @@ span {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   align-self: center;
+  display: flex;
+  align-items: center;
 }
 
 .modal-tech {
@@ -572,12 +574,16 @@ span {
 }
 
 .modal-img {
-  background-image: url(./images/Pop-up.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
   height: 220px;
   margin-top: 24px;
+}
+
+.modal-img img{
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -644,7 +650,7 @@ span {
   }
 
   .modal-tech ul {
-    width: 25%;
+    max-width: 30%;
   }
 
   .modal-tech ul li {
@@ -822,12 +828,12 @@ span {
   }
 
   .pro-btn {
-    /* visibility: hidden; */
+    display: none;
     background: #ff6b00;
     font-family: inherit;
     font-size: 17px;
     font-weight: 700;
-    position: relative;
+    position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
@@ -835,6 +841,14 @@ span {
     color: #fff;
     width: 100%;
     border: none;
+  }
+
+  .profession:hover > .pro-btn {
+    display: block;
+  }
+
+  .profession:hover > h1, .profession:hover > h2, .profession:hover h3, .profession:hover > ul li ,.profession:hover > p{
+    display: none;
   }
 
   .pro-btn:hover {

@@ -1,24 +1,25 @@
 const projects = [
-  // {
-  //   id: '1',
-  //   name: 'Multi Post',
-  //   cardImage: './images/profession-1.png',
-  //   closeIcon: './images/cancel_icon.png',
-  //   popImage: '/images/Pop-up.png',
-  //   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-  //   infoPop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-  //   technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-  //   liveText: 'See Live',
-  //   seeIcon: './images/see-icon.png',
-  //   sourceText: 'See Source',
-  //   liveLink: 'https://ritadee.github.io/portfolio/',
-  // },
   {
-    id: '2',
-    name: 'Profesional Art Printing Data',
-    cardImage: './images/profession-1.png',
+    id: '0',
+    name: 'Multi Post Stories',
+    cardImage: './images/Img placeholder.png',
     closeIcon: './images/cancel_icon.png',
-    popImage: '/images/Pop-up.png',
+    popImage: '/images/profession-1.png',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    infoPop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
+    liveText: 'See Live',
+    seeIcon: './images/see-icon.png',
+    sourceText: 'See Source',
+    liveLink: 'https://ritadee.github.io/portfolio/',
+  },
+
+  {
+    id: '1',
+    name: 'Profesional Art Printing Data',
+    cardImage: 'images/profession-1.png',
+    closeIcon: './images/cancel_icon.png',
+    popImage: '/images/profession-1.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     infoPop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
@@ -30,8 +31,8 @@ const projects = [
 
   {
     id: '2',
-    name: 'Profesional Art Printing Data',
-    cardImage: './images/profession-1.png',
+    name: 'Data Dashboard Healthcare',
+    cardImage: 'images/profession-2.png',
     closeIcon: '/images/cancel_icon.png',
     popImage: '/images/Pop-up.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
@@ -45,8 +46,8 @@ const projects = [
 
   {
     id: '3',
-    name: 'Profesional Art Printing Data',
-    cardImage: './images/profession-1.png',
+    name: 'Website Portfolio',
+    cardImage: './images/profession-3.png',
     closeIcon: '/images/cancel_icon.png',
     popImage: '/images/Pop-up.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
@@ -61,7 +62,7 @@ const projects = [
   {
     id: '4',
     name: 'Profesional Art Printing Data',
-    cardImage: './images/profession-1.png',
+    cardImage: './images/profession-4.png',
     closeIcon: '/images/cancel_icon.png',
     popImage: '/images/Pop-up.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
@@ -75,8 +76,8 @@ const projects = [
 
   {
     id: '5',
-    name: 'Profesional Art Printing Data',
-    cardImage: './images/profession-1.png',
+    name: 'Data Dashboard Healthcare',
+    cardImage: './images/profession-2.png',
     closeIcon: '/images/cancel_icon.png',
     popImage: '/images/Pop-up.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
@@ -89,7 +90,7 @@ const projects = [
   },
 
   {
-    id: '7',
+    id: '6',
     name: 'Profesional Art Printing Data',
     cardImage: './images/profession-1.png',
     closeIcon: './images/cancel_icon.png',
@@ -115,16 +116,39 @@ for (let i = 0; i < projects.length; i += 1) {
           <li>${projects[i].technologies[1]}</li>
           <li>${projects[i].technologies[2]}</li>
         </ul>
-        <button aria-label="view" class="btn-project see-project" type="button">
+        <button aria-label="view" class="btn-project see-project mob" type="button">
           See Project
         </button>
       </div>`;
 }
 
-const projectButtons = document.querySelectorAll('.see-project');
+// const multiButton = document.querySelector('.btn-multi');
+const projectButtons = document.querySelectorAll('.desk');
+
+const mobButtons = document.querySelectorAll('.mob');
+
+
 const popUpContainer = document.querySelector('.modal-container');
 
+
+projectButtons.forEach((btn, i) => {
+  console.log(btn, i, projects[i])
+  btn.addEventListener('click', () => {
+    popUpContainer.style.display = 'flex';
+    populatePopUpData(projects[i]);
+  });
+});
+
+mobButtons.forEach((btn, i) => {
+  console.log(btn, i, projects[i])
+  btn.addEventListener('click', () => {
+    popUpContainer.style.display = 'flex';
+    populatePopUpData(projects[i]);
+  });
+});
+
 function populatePopUpData(data) {
+  console.log(data, 'This is the data')
   popUpContainer.innerHTML = `
   <div class="modal">
         <div class="modal-pop">
@@ -139,7 +163,9 @@ function populatePopUpData(data) {
             <li>${data.technologies[2]}</li>
           </ul>
         </div>
-        <div class="modal-img"></div>
+        <div class="modal-img">
+          <img src="${data.cardImage}"/>
+        </div>
         <p>${data.infoPop}</p>
         <div class="modal-btn">
           <button class="btn-1" type="button">See Live <img src="./images/see-Icon.png" alt="see live button"></button>
@@ -156,43 +182,14 @@ function populatePopUpData(data) {
   });
 }
 
-projectButtons.forEach((btn, i) => {
-  btn.addEventListener('click', () => {
-    popUpContainer.style.display = 'flex';
-    populatePopUpData(projects[i]);
-  });
-});
+// multiButton.addEventListener('click', function(){
+//   populatePopUpData(multi)
+// })
 
 const seeProjectBtn = document.querySelector('.btn-project-btn');
 seeProjectBtn.addEventListener('click', () => {
   popUpContainer.style.display = 'flex';
   populatePopUpData(projects[0]);
 });
-
-// const multiPost = document.querySelector('.multi');
-// const multiBtn = document.querySelector('.btn-multi');
-// const cancelMulti = document.querySelector('.cancel-multi');
-
-// multiBtn.addEventListener('click', () => {
-//   multiPost.style.position = 'fixed';
-//   multiPost.style.width = '100%';
-//   multiPost.style.height = '100vh';
-//   multiPost.style.left = '0';
-//   multiPost.style.top = '0';
-//   multiPost.style.bottom = '0';
-//   multiPost.style.right = '0';
-//   multiPost.style.zIndex = '99';
-//   multiPost.style.backgroundColor = '#fff';
-// });
-
-// cancelMulti.addEventListener('click', () => {
-//   multiPost.style.display ='grid';
-//   multiPost.style.gridTemplateColumn = '70%, 30%'
-//   multiPost.style.gap = '24px'
-//   multiPost.style.width = '80%'
-//   multiPost.style.backgroundColor = 'green';
-//   multiPost.style.zIndex = '79';
-// });
-
 
 
