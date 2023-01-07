@@ -10,6 +10,7 @@ function formValidate(event) {
   if (email.value !== email.value.toLowerCase()) {
     error.style.visibility = 'visible';
     error.innerHTML = 'Please input your email address in lowercase.';
+    event.preventDefault();
   } else {
     error.style.visibility = 'hidden';
   }
