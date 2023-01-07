@@ -26,6 +26,7 @@ function storeData() {
   };
   localStorage.setItem('user', JSON.stringify(user));
 }
+
 userName.addEventListener('focusout', storeData);
 email.addEventListener('focusout', storeData);
 message.addEventListener('focusout', storeData);
